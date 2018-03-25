@@ -1,12 +1,12 @@
 {
-  "name": "nbainjuryupdater",
+  "name": "nba-injury-updater",
   "version": "1.0.0",
   "description": "player injury updater",
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "nodemon --inspect server/index.js"
-
+    "start": "nodemon --inspect server/index.js",
+    "react": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
@@ -40,6 +40,6 @@
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "webpack": "^4.2.0"
+    "webpack": "^2.2.1"
   }
 }
