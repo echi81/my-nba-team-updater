@@ -1,14 +1,14 @@
 const request = require('request');
 const config = require('../config.js');
 
-let getInjuryData = (teams, callback) => {
+let getInjuryData = (team, callback) => {
    let options = {
     url: "https://api.mysportsfeeds.com/v1.2/pull/nba/2017-playoff/player_injuries.json",
     headers: {
       Authorization: `Basic ${config.credentials}`
     },
     //temporary team fillers
-    qs :  {team: 'houston-rockets', team: 'cleveland-cavaliers'}
+    qs :  {team: team}
 
   }
 
